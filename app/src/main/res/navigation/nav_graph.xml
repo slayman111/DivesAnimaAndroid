@@ -10,6 +10,15 @@
         android:name="com.example.divesanimaandroid.fragments.AuthorizationFragment"
         android:label="AuthorizationFragment"
         tools:layout="@layout/fragment_authorization">
+        <action
+            android:id="@+id/action_authorizationFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.divesanimaandroid.fragments.ArticlesFragment"
+        android:label="fragment_articles"
+        tools:layout="@layout/fragment_articles" />
 
 </navigation>
