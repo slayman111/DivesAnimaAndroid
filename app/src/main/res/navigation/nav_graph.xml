@@ -19,6 +19,20 @@
         android:id="@+id/articlesFragment"
         android:name="com.example.divesanimaandroid.fragments.ArticlesFragment"
         android:label="fragment_articles"
-        tools:layout="@layout/fragment_articles" />
+        tools:layout="@layout/fragment_articles" >
+        <action
+            android:id="@+id/action_articlesFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.example.divesanimaandroid.fragments.AssignmentFragment"
+        android:label="fragment_assignment"
+        tools:layout="@layout/fragment_assignment" >
+        <action
+            android:id="@+id/action_assignmentFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+    </fragment>
 
 </navigation>

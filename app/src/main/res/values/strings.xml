@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">DivesAnimaAndroid</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Dives Anima</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="log_in">Войти</string>
     <string name="sign_up">Зарегистрироваться</string>
     <string name="incorrect_login_or_password">Неверный логин или пароль</string>
     <string name="sp_jwt">SHARED_JWT</string>
+    <string name="home">Home</string>
+    <string name="assignment">Assignment</string>
 </resources>
