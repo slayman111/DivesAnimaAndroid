@@ -13,26 +13,51 @@
         <action
             android:id="@+id/action_authorizationFragment_to_articlesFragment"
             app:destination="@id/articlesFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/articlesFragment"
         android:name="com.example.divesanimaandroid.fragments.ArticlesFragment"
         android:label="fragment_articles"
-        tools:layout="@layout/fragment_articles" >
+        tools:layout="@layout/fragment_articles">
         <action
             android:id="@+id/action_articlesFragment_to_assignmentFragment"
             app:destination="@id/assignmentFragment" />
+        <action
+            android:id="@+id/action_articlesFragment_to_articleInfoFragment"
+            app:destination="@id/articleInfoFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/assignmentFragment"
         android:name="com.example.divesanimaandroid.fragments.AssignmentFragment"
         android:label="fragment_assignment"
-        tools:layout="@layout/fragment_assignment" >
+        tools:layout="@layout/fragment_assignment">
         <action
             android:id="@+id/action_assignmentFragment_to_articlesFragment"
             app:destination="@id/articlesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.divesanimaandroid.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+
+    <fragment
+        android:id="@+id/articleInfoFragment"
+        android:name="com.example.divesanimaandroid.fragments.ArticleInfoFragment"
+        android:label="fragment_article_info"
+        tools:layout="@layout/fragment_article_info" >
+        <action
+            android:id="@+id/action_articleInfoFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+        <action
+            android:id="@+id/action_articleInfoFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
     </fragment>
 
 </navigation>

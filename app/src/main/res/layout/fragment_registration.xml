@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.AuthorizationFragment">
+    tools:context=".fragments.RegistrationFragment">
 
     <EditText
         android:layout_width="300dp"
@@ -34,24 +34,27 @@
         android:autofillHints="password"
         app:layout_constraintEnd_toEndOf="@+id/editTextLogin" />
 
-    <Button
-        android:text="@string/log_in"
+    <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonSignIn"
-        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        android:inputType="textPassword"
+        android:hint="@string/repeat_password"
+        android:ems="10"
+        android:id="@+id/editTextPasswordRepeat"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextLogin"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
-        android:layout_marginTop="16dp" />
+        android:autofillHints="password"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword" />
 
     <Button
-        android:text="@string/sign_up"
+        android:text="@string/register_in"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSignUp"
-        app:layout_constraintStart_toStartOf="@+id/buttonSignIn"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
-        app:layout_constraintEnd_toEndOf="@+id/buttonSignIn"
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordRepeat"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordRepeat"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordRepeat"
         android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

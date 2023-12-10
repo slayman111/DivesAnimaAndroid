@@ -24,11 +24,11 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField "String", "API_BASE_PATH", "\"http://172.26.64.1:8080/api/\""
+            buildConfigField "String", "API_BASE_PATH", "\"http://192.168.1.146:8080/api/\""
         }
 
         release {
-            buildConfigField "String", "API_BASE_PATH", "\"http://172.26.64.1:8080/api/\""
+            buildConfigField "String", "API_BASE_PATH", "\"http://192.168.1.146:8080/api/\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

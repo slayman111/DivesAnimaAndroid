@@ -12,8 +12,9 @@ import com.example.divesanimaandroid.R
 import com.example.divesanimaandroid.models.dto.request.AuthRequest
 import com.example.divesanimaandroid.utils.http.DivesAnimaClient
 import kotlinx.android.synthetic.main.fragment_authorization.buttonSignIn
+import kotlinx.android.synthetic.main.fragment_authorization.buttonSignUp
 import kotlinx.android.synthetic.main.fragment_authorization.editTextLogin
-import kotlinx.android.synthetic.main.fragment_authorization.editTextTextPassword
+import kotlinx.android.synthetic.main.fragment_authorization.editTextPassword
 import kotlinx.coroutines.launch
 
 class AuthorizationFragment : Fragment() {
@@ -41,7 +42,7 @@ class AuthorizationFragment : Fragment() {
                 divesAnimaClient.login(
                     AuthRequest(
                         editTextLogin.text.trim().toString(),
-                        editTextTextPassword.text.trim().toString()
+                        editTextPassword.text.trim().toString()
                     )
                 )?.let { response ->
                     activity?.getPreferences(MODE_PRIVATE)?.edit()
@@ -51,6 +52,11 @@ class AuthorizationFragment : Fragment() {
                         .navigate(R.id.action_authorizationFragment_to_articlesFragment)
                 }
             }
+        }
+
+        buttonSignUp.setOnClickListener {
+            Navigation.findNavController(view)
+                .navigate(R.id.action_authorizationFragment_to_registrationFragment)
         }
     }
 

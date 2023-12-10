@@ -8,4 +8,18 @@
     <string name="sp_jwt">SHARED_JWT</string>
     <string name="home">Home</string>
     <string name="assignment">Assignment</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="register_in">Зарегистрироваться</string>
+    <string name="registration_error">Что-то пошло не так при регистрации аккаунта</string>
+    <string name="account_created">Ваш аккаунт был успешно создан</string>
+    <string name="password_not_match">Пароли не совпадают</string>
+    <string name="login_already_exists">Такой логин уже существует</string>
+    <string name="empty_password_or_login">Пароль и логин не должны быть пустыми</string>
+    <string name="article_id">article_id</string>
+    <string name="todo">to do list</string>
+    <string name="todo_created">Запись создана</string>
+    <string name="ok">ОК</string>
+    <string name="add_record">Добавить запись</string>
+    <string name="back">Назад</string>
+    <string name="todo_deleted">Запись удалена</string>
 </resources>
